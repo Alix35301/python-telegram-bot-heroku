@@ -19,6 +19,7 @@ TOKEN = os.environ.get('TOKEN')
 def start(update, context):
     """Send a message when the command /start is issued."""
     update.message.reply_text('Hi!')
+    check()
 
 def help(update, context):
     """Send a message when the command /help is issued."""
@@ -95,6 +96,8 @@ def check():
             continue
 
         print("Add to cart button found")
+        update.message.reply_text('doing this!')
+
 
         try:
             # add to cart
