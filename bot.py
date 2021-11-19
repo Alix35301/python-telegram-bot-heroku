@@ -72,7 +72,7 @@ def check():
     import info
 
     # make sure this path is correct
-    PATH = os.environ("CHROMEDRIVER_PATH")
+    PATH = os.os.environ("CHROMEDRIVER_PATH")
 
     driver = webdriver.Chrome(PATH)
 
